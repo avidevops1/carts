@@ -2,6 +2,10 @@ pipeline {
   agent {
     docker {
       image 'schoolofdevops/carts-maven'
+    }
+    
+  }
+  
   stages {
     stage('build') {
       steps {
